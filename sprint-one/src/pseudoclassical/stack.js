@@ -17,6 +17,6 @@ Stack.prototype.pop = function(){
   delete this.storage[this.counter];
   return result;
 };
-Stack.prototype.push = function(value){
+Stack.prototype.size = function(value){
   return this.counter;
 };
