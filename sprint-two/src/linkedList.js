@@ -6,8 +6,13 @@ var LinkedList = function(){
   list.addToTail = function(value){
     if(!list.head){
       list.head = Node(value);
+      list.tail = list.head;
     }
-      list.tail = Node(value);
+    //look at implementing else
+    //with one element head and tail point to the same node
+    //draw linked list
+      list.tail.next = Node(value);
+      list.tail = list.tail.next;
       if(!list.head.next){
         list.head.next = list.tail;
       }
