@@ -31,3 +31,35 @@ queueMethods.dequeue = function(){
 queueMethods.size = function(){
   return this.length;
 };
+
+
+/*
+
+var Queue = function(){
+  obj._start = 0;
+  obj._end = 0;
+  obj._storage= {}; //need a object to hold the values
+  _.extend(obj, queueMethods);
+
+  return obj;
+};
+var queueMethods ={};
+
+queueMethods.enqueue = function(value){
+  this._storage[this._counter++]=value;
+};
+
+queueMethods.dequeue = function(){
+  result = this._storage[this._start];
+  if(this.size()){
+    delete this._storage[this._start];
+    this._start++;
+  }
+  return result;
+};
+
+queueMethods.size = function(){
+  return this._end-this._start;
+};
+
+*/

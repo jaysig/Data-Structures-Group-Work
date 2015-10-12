@@ -24,3 +24,31 @@ Queue.prototype.dequeue = function(){
 Queue.prototype.size = function(){
   return this.length;
 };
+
+/*
+
+var Queue = function(){
+
+  this._start = 0;
+  this._end = 0;
+  this._storage= {}; //need a this to hold the values
+};
+
+Queue.prototype.enqueue = function(value){
+  this._storage[this._counter++]=value;
+};
+
+Queue.prototype.dequeue = function(){
+  result = this._storage[this._start];
+  if(this.size()){
+    delete this._storage[this._start];
+    this._start++;
+  }
+  return result;
+};
+
+Queue.prototype.size = function(){
+  return this._end-this._start;
+};
+
+*/

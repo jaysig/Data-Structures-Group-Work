@@ -21,17 +21,34 @@ var Queue = function(){
     lowestKey++;
     return result;
 
-    /* result = storage[lowestKey];
-    lowestKey++;
-    //expected undefined to equal b
-    //expected c to equal b
-    delete storage[lowestKey];
-    return result;*/
-  };
+    };
 
   someInstance.size = function(){
     return length;
-  };
+    };
 
-  return someInstance;
+    return someInstance;
+    /*
+    var storage ={}, start = 0, end = 0;
+
+    someInstance.enqueue = function(value){
+      storage[counter++]=value;
+    };
+
+    someInstance.dequeue = function(){
+      result = storage[start];
+      if(someInstance.size()){
+        delete storage[start];
+        start++;
+      }
+      return result;
+    };
+
+    someInstance.size = function(){
+      return end-start;
+    };
+    return someInstance;
+
+    return result;*/
+
 };
